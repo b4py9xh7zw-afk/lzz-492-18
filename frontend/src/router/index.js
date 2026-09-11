@@ -35,6 +35,18 @@ const routes = [
       {
         path: 'user',
         component: () => import('@/views/pc/User.vue')
+      },
+      {
+        path: 'schedule',
+        component: () => import('@/views/pc/Schedule.vue')
+      },
+      {
+        path: 'supply',
+        component: () => import('@/views/pc/Supply.vue')
+      },
+      {
+        path: 'settlement',
+        component: () => import('@/views/pc/Settlement.vue')
       }
     ]
   },
@@ -57,6 +69,14 @@ const routes = [
       {
         path: 'user',
         component: () => import('@/views/h5/User.vue')
+      },
+      {
+        path: 'schedule',
+        component: () => import('@/views/h5/Schedule.vue')
+      },
+      {
+        path: 'supply',
+        component: () => import('@/views/h5/Supply.vue')
       }
     ]
   }

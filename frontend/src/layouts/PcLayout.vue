@@ -33,6 +33,18 @@
               <el-icon><Briefcase /></el-icon>
               <span>工作管理</span>
             </el-menu-item>
+            <el-menu-item index="/pc/schedule">
+              <el-icon><Sunny /></el-icon>
+              <span>排班管理</span>
+            </el-menu-item>
+            <el-menu-item index="/pc/supply">
+              <el-icon><Box /></el-icon>
+              <span>物资发放</span>
+            </el-menu-item>
+            <el-menu-item index="/pc/settlement">
+              <el-icon><Wallet /></el-icon>
+              <span>结算管理</span>
+            </el-menu-item>
             <el-menu-item index="/pc/user">
               <el-icon><User /></el-icon>
               <span>用户管理</span>
@@ -50,7 +62,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { Document, Briefcase, RefreshRight, User } from '@element-plus/icons-vue'
+import { Document, Briefcase, RefreshRight, User, Sunny, Box, Wallet } from '@element-plus/icons-vue'
 
 const route = useRoute()
 const router = useRouter()
